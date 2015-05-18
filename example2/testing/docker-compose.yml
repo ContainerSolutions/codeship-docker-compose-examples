@@ -1,0 +1,8 @@
+web:
+  extends:
+    file: ../common/docker-compose.yml
+    service: web
+  volumes_from: 
+    - content
+content:
+  build: content

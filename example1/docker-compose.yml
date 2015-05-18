@@ -1,0 +1,9 @@
+backend:
+  image: redis:3
+
+frontend:
+  build: commander
+  links:
+    - backend:redis  
+  ports:
+    - 8081:8081
