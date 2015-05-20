@@ -1,9 +1,13 @@
 backend:
   image: redis:3
+  restart: always
 
 frontend:
   build: commander
   links:
     - backend:redis  
+  environment:
+    - ENV_VAR1=some_value
   ports:
     - 8081:8081
+  restart: always
