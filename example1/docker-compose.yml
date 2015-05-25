@@ -10,4 +10,6 @@ frontend:
     - ENV_VAR1=some_value
   ports:
     - 8081:8081
+  environment:
+    - VAR1=value
   restart: always
