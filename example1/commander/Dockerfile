@@ -1,4 +1,4 @@
-FROM node:0.12.2
+FROM node:11.9.0
 MAINTAINER Lukasz Guminski <lukasz.guminski@container-solutions.com>
 
 RUN curl -L https://github.com/joeferner/redis-commander/tarball/v0.3.2 | tar zx
